@@ -8,16 +8,30 @@
         <form>
         <center>
             Member Name:<input type='text' value=""><br><br>
-            Designation:<input type='text' value=""><br><br>
+            Designation:<input type="datalist" value=" "><br><br>
             Gender:<input type="radio"name="gender"checked value="Male">Male
                    <input type="radio"name="gender"checked value="Female">Female 
                    <br><br>
+            Blood group:<select>
+                        <option value="">-- Please choose blood group
+                        </option>
+                        <option value="A +ve">A+ve</option>
+                        <option value="A -ve">A-ve</option>
+                        <option value="B +ve">B+ve</option>
+                        <option value="B -ve">B-ve</option>
+                        <option value="O +ve">O+ve</option>
+                        <option value="O -ve">O-ve</option>
+            </select>  <br><br>     
             Date of birth:<input type="date"><br><br>
             Phone number:<input type="number"><br><br>
             Address:<textarea rows="4"cols="10"></textarea><br><br>
             Email:<input type="email"><br><br>
         </rect>
             <button type="submit">Submit</button>
+            <div class="popup" onclick="myFunction()">Click me!
+                <span class="popuptext" id="myPopup">Popup text...</span>
+              </div> 
+            <button type="reset">Reset</button>
         </center>    
         </form>
         </body>
