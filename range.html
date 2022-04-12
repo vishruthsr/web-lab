@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1=prompt("enter the lower number ");
+        if(num1==2)
+            {
+                var l=3;
+            }
+        for(let int i=num1;i<=num2;i++)    
+        {
+            if(num1%i!=0)
+            {
+                l=i;
+            }
+        }
+        var num2=prompt("enter the higher number ");
+        if(num2==2)
+            {
+                var h=0;
+            }
+        for(let int j=num2;j>=num1;j--)    
+        {
+            if(num2%j!=0)
+            {
+                h=j;
+            }
+        }    
+        var difference=h-l;
+        document.write("max difference between prime numbers in given range is:\n");
+        document.write(difference);
+        
+        
+
+
+    </script>
+    
+</body>
+</html>
