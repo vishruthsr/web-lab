@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var c=prompt("enter colour code [R,B,G,O,Y,W]");
+        function colorChange()
+        {
+            if(c=='R')
+            {
+                c.style.color='blue';
+            }
+        }
+        switch(c)
+        {
+            case 'R':
+                document.write("Red");
+                document.body.style.backgroundColor="red";
+
+
+            break;
+            case 'B':
+                document.write("Blue");
+                document.body.style.backgroundColor="blue";
+            break;                
+            case 'G':
+                document.write("Green");
+                document.body.style.backgroundColor="green";
+            break;
+            case 'O':
+                document.write("Orange");
+                document.body.style.backgroundColor="orange";
+            break;
+            case 'Y':
+                document.write("Yellow");
+                document.body.style.backgroundColor="yellow";
+            break;
+            case 'W':
+                document.write("White");
+                document.body.style.backgroundColor="white";
+            break;
+            default:
+                document.write("Invalid Code!!")
+            break;    
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>
