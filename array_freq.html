@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array frequent</title>
+    <script>
+    function mostFrequent(arr, n)
+	{   
+        arr.sort();
+	    let max_count = 1;
+        let res = arr[0];
+		let curr_count = 1;
+		for (let i=1;i<n;i++)
+		{
+			if (arr[i]==arr[i-1])
+				curr_count++;
+			else
+				curr_count=1;
+			
+			if (curr_count>max_count)
+			{
+				max_count=curr_count;
+				res = arr[i-1];
+			}
+
+		}
+		return res;
+	}
+		let arr = [7,'z','z',7,9,'a',3,'a',7,4,9,'a',1,1,1,1,1];
+        let n = arr.length;
+		document.write("most freqently occuring element is ",mostFrequent(arr,n));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
