@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leap year array range</title>
+    <script>
+        const year1=parseInt(prompt("Enter year 1:"));
+        const year2=parseInt(prompt("Enter year 2:"));
+        function leap_year_range(start_year, end_year) 
+        {
+            const year_range = [];
+            for (let i = start_year; i <= end_year; i++)
+            {
+                year_range.push(i);
+            }
+            const new_array = [];
+
+  year_range.forEach(
+   year => { 
+      if (test_LeapYear(year)) 
+      new_array.push(year);
+   });
+
+  return new_array;
+     }
+function test_LeapYear(year) 
+{
+   if ((year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
+                return year;
+        } else {
+                return false;
+        }
+}
+document.write(leap_year_range(year1,year2));  
+</script>
+</head>
+<body>
+    
+</body>
+</html>
