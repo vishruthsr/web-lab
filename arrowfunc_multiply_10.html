@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiply 10 arrowfunction</title>
+</head>
+<script>
+    let n=parseInt( prompt("enter value of n"))
+        const arr=[]
+        for(let i=0;i<n;i++)
+        {
+            arr[i]=parseInt( prompt("enter element "+(i+1)))
+        }
+        document.write("entered array : <br/>")
+        document.write(arr)
+        document.write("<br/>")
+        let result= arr.map((number) => number *10)
+        document.write("new array : <br/>")
+        document.write(result);
+</script>
+<body>
+    
+</body>
+</html>
